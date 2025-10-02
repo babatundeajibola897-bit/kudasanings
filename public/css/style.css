@@ -9,7 +9,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: #2d3436;
-    background-color: #f8f9fa;
+    background-color: #f5f6f8;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -68,7 +68,7 @@ body {
 .dashboard-container {
     max-width: 414px;
     margin: 0 auto;
-    background: linear-gradient(180deg, #fafbfc 0%, #f5f6f8 50%, #ffffff 100%);
+    background: #f5f6f8;
     min-height: 100vh;
     padding-bottom: 100px;
 }
@@ -78,8 +78,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 16px;
-    background: transparent;
+    padding: 16px 20px;
+    background: white;
+    margin-bottom: 12px;
 }
 
 .user-info {
@@ -89,12 +90,11 @@ body {
 }
 
 .avatar {
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    border: 2px solid #6a11cb;
-   background: linear-gradient(135deg, #40196d 0%, #491c7d 100%);
+    background: #2d3436;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ body {
 }
 
 .greeting-text {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: #2d3436;
 }
@@ -157,11 +157,11 @@ body {
 /* Balance Card - Ultra Premium Design */
 .balance-card {
     background: linear-gradient(135deg, #40196d 0%, #491c7d 100%);
-    margin: 16px 20px 20px;
-    border-radius: 20px;
-    padding: 24px;
+    margin: 0 16px 16px;
+    border-radius: 16px;
+    padding: 20px;
     color: white;
-    box-shadow: 0 8px 24px rgba(64, 25, 108, 0.3), 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     position: relative;
     overflow: hidden;
 }
@@ -201,9 +201,9 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .transaction-history-btn {
@@ -227,27 +227,27 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 32px;
-    font-weight: 900;
-    margin-bottom: 18px;
-    letter-spacing: -1.5px;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
     position: relative;
     z-index: 1;
 }
 
 .add-money-btn {
-    background: rgba(255, 255, 255, 0.95);
+    background: white;
     border: none;
-    color: #6a11cb;
-    padding: 14px 24px;
-    border-radius: 24px;
-    font-size: 14px;
-    font-weight: 800;
+    color: #40196d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
 
 .add-money-btn:hover {
@@ -260,11 +260,11 @@ body {
 .quick-actions {
     display: flex;
     justify-content: space-around;
-    margin: 0 20px 24px;
+    margin: 0 16px 16px;
     background: white;
     padding: 20px 12px;
     border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+    box-shadow: none;
 }
 
 .action-item {
@@ -284,19 +284,19 @@ body {
 }
 
 .action-icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     transition: all 0.3s ease;
 }
 
 .action-icon.green {
     background: linear-gradient(135deg,  #9559d9, #bd97e7);
-    box-shadow: 0 4px 12px rgba(0, 200, 83, 0.15);
+    box-shadow: none;
 }
 
 .action-icon svg {
@@ -317,60 +317,58 @@ body {
 
 /* Recent Transactions */
 .recent-transactions {
-    margin: 0 20px 24px;
+    margin: 0 16px 20px;
 }
 
 .recent-transactions h3 {
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 16px;
+    font-weight: 700;
     color: #2d3436;
-    margin-bottom: 14px;
-    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+    letter-spacing: 0;
 }
 
 .transaction-item {
     display: flex;
     align-items: center;
     background: white;
-    padding: 16px;
+    padding: 14px 16px;
     border-radius: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
-    border: 1px solid #f0f2f5;
 }
 
 .transaction-item:hover {
     background: #fafbfc;
-    border-color: #e8eaed;
 }
 
 .transaction-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 16px;
+    margin-right: 12px;
 }
 
 .transaction-icon.purple {
-      background: linear-gradient(135deg,  #9559d9, #bd97e7);
-    box-shadow: 0 4px 12px rgba(106, 17, 203, 0.15);
+    background: #f0e6ff;
+    box-shadow: none;
 }
 
 .transaction-icon.purple svg {
-    color: #6a11cb;
+    color: #40196d;
 }
 
 .transaction-icon.green {
-      background: linear-gradient(135deg,  #9559d9, #bd97e7);
-    box-shadow: 0 4px 12px #40196d;
+    background: #e6f7f0;
+    box-shadow: none;
 }
 
 .transaction-icon.green svg {
-    color: #40196d;
+    color: #00c853;
 }
 
 .transaction-details {
@@ -378,22 +376,22 @@ body {
 }
 
 .transaction-title {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 600;
     color: #2d3436;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 .transaction-date {
-    font-size: 12px;
-    color: #636e72;
-    font-weight: 600;
+    font-size: 11px;
+    color: #999;
+    font-weight: 500;
 }
 
 .transaction-amount {
-    font-size: 16px;
-    font-weight: 800;
-    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
 }
 
 .transaction-amount.positive {
@@ -426,11 +424,11 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    margin: 0 20px 24px;
+    margin: 0 16px 20px;
     background: white;
-    padding: 20px 16px;
+    padding: 20px 12px;
     border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+    box-shadow: none;
 }
 
 .service-item {
@@ -450,21 +448,21 @@ body {
 }
 
 .service-icon {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border-radius: 10px;
-    background: linear-gradient(135deg, #f0f4f8, #e2eaf2);
+    background: #f0e6ff;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     transition: all 0.3s ease;
 }
 
 .service-icon svg {
-    width: 22px;
-    height: 22px;
-    color: #6a11cb;
+    width: 20px;
+    height: 20px;
+    color: #40196d;
 }
 
 .service-item:hover .service-icon {
@@ -473,8 +471,8 @@ body {
 }
 
 .service-item span {
-    font-size: 11px;
-    font-weight: 700;
+    font-size: 10px;
+    font-weight: 600;
     color: #2d3436;
     text-align: center;
     line-height: 1.3;
