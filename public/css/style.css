@@ -68,7 +68,7 @@ body {
 .dashboard-container {
     max-width: 414px;
     margin: 0 auto;
-    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(180deg, #fafbfc 0%, #f5f6f8 50%, #ffffff 100%);
     min-height: 100vh;
     padding-bottom: 100px;
 }
@@ -161,7 +161,7 @@ body {
     border-radius: 20px;
     padding: 24px;
     color: white;
-    box-shadow: 0 10px 30px rgba(106, 17, 203, 0.35);
+    box-shadow: 0 8px 24px rgba(64, 25, 108, 0.3), 0 2px 8px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
 }
@@ -264,7 +264,7 @@ body {
     background: white;
     padding: 20px 12px;
     border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
 .action-item {
@@ -334,14 +334,15 @@ body {
     background: white;
     padding: 16px;
     border-radius: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
+    border: 1px solid #f0f2f5;
 }
 
 .transaction-item:hover {
-    transform: translateY(-1px);
-    background: #fafafa;
+    background: #fafbfc;
+    border-color: #e8eaed;
 }
 
 .transaction-icon {
@@ -429,7 +430,7 @@ body {
     background: white;
     padding: 20px 16px;
     border-radius: 16px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
 .service-item {
