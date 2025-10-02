@@ -297,11 +297,11 @@ body {
 }
 
 .action-icon.green {
-    background: #e6f9f0;
+    background: #40196c;
 }
 
 .action-icon.green svg {
-    color: #00c48c;
+    color: #40196c;
 }
 
 .action-item span {
